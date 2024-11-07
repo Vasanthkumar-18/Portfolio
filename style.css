@@ -441,7 +441,7 @@ nav li:first-child {
 }
 
 .projectcart1 {
-    border: 3px solid black;
+    border: 1px solid black;
     height: 480px;
     width: 300px;
     border-radius: 8px;
@@ -458,7 +458,7 @@ nav li:first-child {
 .project-image1 img {
     height: 100%;
     width: 100%;
-    padding-top: px;
+    border-radius: 5px;
 }
 
 .project1-heading-1 {
