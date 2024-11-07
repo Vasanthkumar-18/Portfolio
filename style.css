@@ -1,0 +1,2261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+/*------deskots-screen-----*/
+span {
+    color: yellowgreen;
+}
+
+/*------mobile-navbar------*/
+
+.mobile-nav {
+    display: none;
+}
+
+.hideondeskot {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+/*-----deskot-nav------*/
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav-heading a {
+    cursor: default;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    display: flex;
+    text-decoration: none;
+    padding: 0 30px;
+    align-items: center;
+    color: white;
+    background-color: black;
+    transition-duration: 1s;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+.nav-heading a:hover {
+    background-color: black;
+    color: white;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.h2 {
+    display: none;
+}
+
+.option {
+    display: none;
+}
+
+
+/* --------About1-------- */
+.about-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 92vh;
+
+
+}
+
+/*---mobile-image-----*/
+.mobile-versoion-image {
+    display: none;
+}
+
+/*-----About-1-----*/
+
+.about-head {
+    display: flex;
+    flex-direction: column;
+    height: 750px;
+    width: 600px;
+    align-items: center;
+    justify-content: space-evenly;
+    animation-name: slideright;
+    animation-duration: 1s;
+}
+
+/*---heading---*/
+
+
+/*-----------about-image-container----------*/
+
+.about-image {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    margin-top: -10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image img {
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    background-image: linear-gradient(black, white);
+    animation-name: slideleft;
+    animation-duration: 1s;
+}
+
+/*------about-image-maincontainer------*/
+
+.name-h2 h2 {
+    cursor: default;
+    font-size: 45px;
+}
+
+.name-h2 span {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 400px;
+    justify-content: center;
+    font-size: 30px;
+    color: rgb(48, 52, 105);
+}
+
+/*-----home-button-----*/
+.cv-button {
+    height: 100px;
+    width: 370px;
+}
+
+.cv-button button {
+    border: solid 2px black;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+    width: 180px;
+    transition-duration: 1s;
+}
+
+.cv-button button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+/*-----About-iconcontainer-----*/
+.about-icons {
+    display: flex;
+    height: 60PX;
+    font-size: 25px;
+    width: 250px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-icons a i {
+    padding: 10px;
+    border-radius: 30px;
+    color: black;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.bxl-linkedin:hover {
+    color: white;
+    background-color: black;
+    transform: translateY(-5px);
+}
+
+.bxl-gmail:hover {
+    color: white;
+    background-color: black;
+    transform: translateY(-5px);
+}
+
+.bxl-github:hover {
+    color: white;
+    background-color: black;
+    transform: translateY(-5px);
+}
+
+/*---------------About2----------------*/
+
+
+/*----about-heading----*/
+
+.aboutheading {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+
+
+}
+
+.aboutheading h1 {
+    color: black;
+}
+
+.aboutheading span {
+    color: grey;
+}
+
+/*----about-maincontainer----*/
+.aboutcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+}
+
+/*--about-img--*/
+.imag-about {
+    display: flex;
+    height: 300px;
+    width: 400px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aboutcontainer img {
+    display: flex;
+    height: 300px;
+    width: 300px;
+    border-radius: 50px;
+    border-radius: 180px;
+    background-image: linear-gradient(black, white);
+    /* box-shadow: -5px -5px 30px 2px rgb(71, 71, 54), 5px 5px 30px 2px  yellow; */
+}
+
+/*--about-paragraph--*/
+.aboutcontainer p {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    font-size: 23px;
+    text-align: justify;
+    line-height: 1.4;
+    animation-name: slideleft-1;
+}
+
+/* --------------------------- skills-------------------------------- */
+
+#skills {
+    height: 100vh;
+}
+
+/*--skill-heading--*/
+.skillheading {
+    height: 150px;
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+
+/*--skill-mainContainer--*/
+.skillcontainer {
+    height: fit-content;
+    animation-name: rotate;
+    animation-duration: 1s;
+
+
+}
+
+/*--skill-fron-end-heading--*/
+
+.frontEnd-heading h2 {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    font-size: 30px;
+}
+
+/*--front-End-Container--*/
+.Front-end {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+}
+
+/*--front-End-paragraph--*/
+.Front-end p {
+    font-size: 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+
+}
+
+/*--front-End-Images--*/
+.Front-end img {
+    height: 150px;
+    width: 150px;
+    animation-name: rotate;
+    animation-duration: 0.5s;
+
+}
+
+/*--front-End-carts--*/
+.fi1 {
+    text-align: center;
+}
+
+.fi2 {
+    text-align: center
+}
+
+.fi3 {
+    text-align: center;
+}
+
+.fi4 {
+    text-align: center;
+}
+
+/*-------------BACKEND--------------*/
+
+.backEnd-heading h2 {
+
+    width: 100%;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    font-size: 30px;
+}
+
+/*--Back-End-Container--*/
+
+.back-end {
+    justify-content: space-evenly;
+    display: flex;
+}
+
+/*--Back-End-image--*/
+.back-end img {
+    height: 150px;
+    width: 150px;
+    animation-name: rotate;
+
+}
+
+/*--Back-End-Paragraph--*/
+.back-end p {
+    font-size: 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+
+}
+
+/*--Back-End--Carts--*/
+.bi1 {
+    text-align: center;
+}
+
+.bi2 {
+    text-align: center;
+}
+
+.bi3 {
+    text-align: center;
+}
+
+.bi4 {
+    text-align: center;
+}
+
+/* -----------Projects----------- */
+
+.projects {
+    height: 650px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.projects-title {
+    padding: 20px 0px;
+    font-size: 25px;
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+}
+
+.projectcart1 {
+    border: 3px solid black;
+    height: 480px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 3px 2px 20px 0.5px rgb(59, 59, 55);
+
+
+}
+
+.project-image1 {
+    width: 100%;
+    height: fit-content;
+}
+
+.project-image1 img {
+    height: 100%;
+    width: 100%;
+    padding-top: px;
+}
+
+.project1-heading-1 {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+
+}
+
+.project1-para {
+    padding: 10px 10px;
+    text-align: justify;
+    line-height: 1.2;
+    font-size: 17px;
+
+
+}
+
+.project-button-1 {
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-view,
+.button-github {
+    border: none;
+    width: 70px;
+    height: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+
+}
+
+.button-view:hover {
+    opacity: 0.8;
+    box-shadow: 3px 2px 10px 0.5px rgb(59, 59, 55);
+
+
+}
+
+.button-github:hover {
+    opacity: 0.8;
+    box-shadow: 3px 2px 10px 0.5px rgb(59, 59, 55);
+
+}
+
+/*------------------------CONTACT--------------------------*/
+
+
+/*---Contact-heading---*/
+.contactheading {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+/*---Contact-heading-Span---*/
+.contactheading span {
+    color: rgb(115, 117, 117);
+}
+
+/*-----------Contact-Main-Container---------*/
+.contactcontainer {
+    display: flex;
+    height: 80vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*-----left-Contact-Heading-----*/
+.left-contact h2 {
+    height: 80px;
+    cursor: default;
+}
+
+/*-----left-Contact-Icons-1-----*/
+.gmail i {
+    margin-right: 10px;
+}
+
+.gmail i:hover {
+    background-color: white;
+    color: black;
+
+}
+
+.bxs-phone {
+    font-size: 30px;
+    margin-top: 3px;
+    margin-right: 10px;
+    display: flex;
+}
+
+.gmail {
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.no {
+    font-size: 35px;
+    display: flex;
+    height: 60px;
+}
+
+/*-----left-Contact-Icons-2-----*/
+.contact-icons {
+    display: flex;
+    height: 70PX;
+    font-size: 30px;
+    width: 120px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-icons a i {
+    padding: 10px;
+    border-radius: 30px;
+    color: black;
+    transition-duration: 1s;
+}
+
+.contact-icons a i:hover {
+    transform: translatex(-10px);
+}
+
+/*-----Right-Contact- Input-----*/
+
+.input1 {
+    display: block;
+    border: none;
+}
+
+.input2 {
+    display: block;
+    margin-top: 20px;
+}
+
+.right-contact form input {
+
+    width: 390px;
+    padding: 20px;
+    margin-left: 0;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: rgb(236, 234, 234);
+
+}
+
+/*-----Right-Contact-Textarea-----*/
+.right-contact textarea {
+    width: 390px;
+    margin-top: 20px;
+    margin-left: 0;
+    border-radius: 10px;
+    padding: 20PX;
+    border: none;
+    font-size: 15PX;
+    border: 2px solid black;
+    background-color: rgb(236, 234, 234);
+}
+
+/*-----Right-Contact-Button-----*/
+.contact-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.contact-button button {
+
+    border: solid 2px black;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 180px;
+    transition-duration: 1s;
+
+}
+
+.contact-button button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+/*---------Animation-keyframes---------*/
+@keyframes slideright {
+    from {
+        transform: translateX(-600px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideleft {
+    from {
+        transform: translateX(600px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+
+
+/*-------resposive-screens-----*/
+
+
+/*-----laptop screen-----*/
+@media screen and (min-width : 1024px) and (max-width : 1339px) {
+
+    .about-head {
+        width: 600px;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .about-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-image img {
+
+        height: 270px;
+        width: 270px;
+
+    }
+
+    .name-h2 {
+        margin-top: 150px;
+    }
+
+    .aboutfull-conatainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutcontainer {
+        height: 550px;
+        margin: 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .aboutcontainer p {
+        max-width: 600px;
+        line-height: 25px;
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .imag-about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 320px;
+    }
+
+    .about-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0;
+        height: 80vh;
+    }
+
+    .aboutcontainer img {
+        height: 300px;
+        width: 300px;
+        margin: 0;
+    }
+
+
+    .about-icons {
+        height: 100px;
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .button {
+        display: flex;
+
+    }
+
+    .Front-end img {
+
+        height: 120px;
+        width: 120px;
+    }
+
+    .back-end img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .aboutheading {
+        margin: 0;
+    }
+
+    #About {
+        margin: 0;
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    .skillheading {
+        display: flex;
+        margin: 0;
+        height: 180px;
+
+        align-items: center;
+    }
+
+    .skillcontainer {
+        height: fit-content;
+    }
+
+    .frontEnd-heading h2 {
+        margin: 0;
+        padding: 0;
+        height: 100px;
+        align-items: center;
+    }
+
+    .Front-end {
+        margin: 0;
+        height: fit-content;
+        align-items: center;
+    }
+
+    .backEnd-heading h2 {
+        margin: 0;
+        padding: 0;
+        height: 100px;
+        align-items: center;
+    }
+
+    .back-end {
+        margin: 0;
+        height: fit-content;
+        align-items: center;
+    }
+
+
+    .contactheading {
+        height: 150px;
+    }
+
+    .contact-icons {
+        margin: 0;
+    }
+
+    .contactcontainer {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0;
+        height: 80vh;
+        align-items: center;
+    }
+
+    .left-contact {
+        margin-left: 0;
+        margin: 0;
+
+
+    }
+
+    .right-contact {
+
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .gmail {
+        font-size: 28px;
+    }
+
+    .right-contact form input {
+
+        width: 340px;
+        padding: 20px;
+        margin-left: 0;
+        border-radius: 10px;
+        border: 2px solid black;
+
+    }
+
+    .right-contact textarea {
+        width: 340px;
+        margin-top: 20px;
+        margin-left: 0;
+        border-radius: 10px;
+        padding: 20PX;
+        border: none;
+        font-size: 15PX;
+        border: 2px solid black;
+    }
+
+
+
+
+
+}
+
+/*---------Tablets screen-------*/
+@media screen and (min-width : 767px) and (max-width : 1023px) {
+
+
+
+    .about-head {
+
+        font-size: 20px;
+        width: 180px;
+
+    }
+
+    #About {
+        margin: 0;
+        height: 100px;
+        display: flex;
+        align-items: center;
+    }
+
+
+
+    .aboutcontainer {
+        margin: 0;
+        height: 600px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutcontainer img {
+        display: none;
+
+    }
+
+    .aboutcontainer p {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        height: fit-content;
+        width: 90%;
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .about-container {
+        margin: 0;
+        height: 100vh;
+    }
+
+    .about-head {
+        width: 400px;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .cv-button {
+        height: 100px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cv-button button {
+        margin: 0;
+        width: 120px;
+        font-size: 12px;
+    }
+
+    .about-image {
+        height: 100%;
+        justify-content: center;
+        margin-top: -50px;
+
+    }
+
+
+    .about-image img {
+        height: 250px;
+        width: 250px;
+
+
+    }
+
+    .about-icons {
+        justify-content: space-between;
+    }
+
+
+
+    .skillheading {
+        display: flex;
+        margin: 0;
+        height: 150px;
+        align-items: center;
+    }
+
+    .frontEnd-heading h2 {
+        margin: 0;
+        padding: 0;
+        height: 100px;
+        align-items: center;
+    }
+
+    .Front-end {
+        margin: 0;
+        height: fit-content;
+        align-items: center;
+    }
+
+    .backEnd-heading h2 {
+        margin: 0;
+        padding: 0;
+        height: 100px;
+        align-items: center;
+    }
+
+    .back-end {
+        margin: 0;
+        height: fit-content;
+        align-items: center;
+    }
+
+    .imag-about {
+        display: none;
+    }
+
+
+    .Front-end img {
+
+        height: 120px;
+        width: 120px;
+    }
+
+    .back-end img {
+
+        height: 120px;
+        width: 120px;
+
+    }
+
+    .projects-title {
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .contactcontainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0;
+        height: 400px;
+    }
+
+    .gmail {
+        font-size: 17px;
+    }
+
+    .no {
+        font-size: 22px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+
+
+
+    .right-contact form input {
+        width: 340px;
+        padding: 15px;
+        margin-left: 0;
+        border-radius: 10px;
+    }
+
+    .right-contact textarea {
+        width: 340px;
+        margin-top: 20px;
+        margin-left: 0;
+        border-radius: 10px;
+        padding: 15PX;
+        font-size: 10PX;
+
+    }
+
+    .right-contact button {
+
+
+        padding: 12px;
+        border-radius: 15px;
+        font-size: 12px;
+        font-weight: 600;
+
+    }
+
+    .contact-icons {
+        display: flex;
+        justify-content: space-between;
+        width: 200px;
+        height: 60px;
+    }
+
+
+
+
+
+
+
+
+}
+
+/*--------- large-mobile-screen-------*/
+@media screen and (min-width : 425px) and (max-width : 766px) {
+
+
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .hideondeskot {
+        display: block;
+    }
+
+    .nav-option {
+
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        width: 200px;
+        height: 300px;
+        position: fixed;
+        right: -300px;
+        transition-duration: 1s;
+    }
+
+    .nav-option a {
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        width: 200px;
+        padding: 0;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        top: 9px;
+        right: 20px;
+        cursor: pointer;
+        background-color: black;
+    }
+
+    .menu img {
+        background-color: black;
+        height: 30px;
+        width: 60px;
+    }
+
+    .show {
+        right: 0px;
+    }
+
+    /* -----------about--------------- */
+    .mobile-version {
+        display: block;
+        margin: 0;
+    }
+
+    .mobile-versoion-image {
+        display: flex;
+        width: 100%;
+        height: 300px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .mobile-versoion-image img {
+        height: 250px;
+        width: 250px;
+        border-radius: 150px;
+        background-image: linear-gradient(black, white);
+    }
+
+
+    .about-image {
+        display: none;
+    }
+
+    .about-container {
+        display: flex;
+        margin: 0;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-head {
+        margin-left: 0px;
+        padding-top: 0px;
+        font-size: 30px;
+        width: 700px
+    }
+
+    .about-head h2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 500px;
+        width: 300px;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+
+    .cv-button {
+        display: flex;
+        justify-content: center;
+        height: 80px;
+        width: 100%;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .cv-button button {
+        margin: 0;
+
+    }
+
+    .cv-button:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+
+    .name-h2 {
+        height: 200px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .name-h2 h2 {
+        font-size: 25px;
+    }
+
+
+    .about-icons {
+        display: flex;
+        padding: 10px;
+        width: 300px;
+        margin-top: 0px;
+        justify-content: space-evenly;
+        align-self: center;
+        padding: 0;
+    }
+
+    .icon-in {
+        height: 45px;
+        width: 45px;
+        background-color: rgb(255, 240, 24);
+        border-radius: 30px;
+    }
+
+    .icon-gmail {
+        height: 45px;
+        width: 45px;
+        background-color: rgb(255, 240, 24);
+        border-radius: 30px;
+    }
+
+    .icon-github {
+        height: 45px;
+        width: 45px;
+        background-color: rgb(255, 240, 24);
+        border-radius: 30px;
+
+    }
+
+    .icon-github:hover {
+        cursor: pointer;
+        opacity: 0.5;
+
+    }
+
+    .icon-gmail:hover {
+        cursor: pointer;
+        opacity: 0.5;
+
+    }
+
+    .icon-in:hover {
+        cursor: pointer;
+        opacity: 0.5;
+
+    }
+
+
+    /* ------------------------about2------------------------ */
+
+
+
+    .imag-about {
+        display: none;
+    }
+
+    .aboutcontainer {
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .aboutcontainer p {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        width: 90%;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+
+    .aboutheading {
+        color: white;
+        display: flex;
+        width: 100%;
+        height: 100px;
+        justify-content: center;
+        align-items: end;
+    }
+
+    .aboutheading h1 {
+        font-size: 25px;
+    }
+
+
+    /* ----------------------skills------------------------------ */
+
+    #skills {
+        display: block;
+
+    }
+
+
+    .skillheading {
+        display: flex;
+        margin: 0;
+        height: 60px;
+        align-items: center;
+        font-size: 22px;
+    }
+
+    .Front-end {
+        height: 150px;
+    }
+
+    .frontEnd-heading h2 {
+
+        margin: 0;
+        padding: 0;
+        height: 70px;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .Front-end img {
+
+        height: 60px;
+        width: 60px;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        justify-content: center;
+
+
+
+    }
+
+    .Front-end p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90px;
+        font-size: 11px;
+        padding: 10px;
+        margin-top: 5px;
+    }
+
+    .fi1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 8px;
+        text-align: center;
+        width: 80px;
+        height: 100px;
+
+    }
+
+    .fi2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 80px;
+        height: 100px;
+        font-size: 8px;
+    }
+
+    .fi3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 80px;
+        height: 100px;
+        font-size: 8px;
+
+    }
+
+    .fi4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 80px;
+        height: 100px;
+        font-size: 8px;
+
+    }
+
+    /* -----projects---- */
+    .projects-title {
+        align-items: center;
+        height: 100px;
+        font-size: 20px;
+    }
+
+    /*------------------------backEnd-------------------- */
+
+    .backEnd-heading h2 {
+        margin: 0;
+        padding: 0;
+        height: 80px;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .back-end {
+        height: 150px;
+        display: flex;
+        justify-content: space-evenly;
+
+        align-items: center;
+
+    }
+
+    .back-end img {
+
+        height: 70px;
+        width: 70px;
+
+    }
+
+    .back-end p {
+        font-size: 14px;
+        margin-top: 5px;
+
+    }
+
+
+
+    .bi1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 8px;
+        text-align: center;
+        width: 80px;
+        height: 100px;
+
+
+    }
+
+
+    .bi2 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 80px;
+        height: 100px;
+        font-size: 8px;
+    }
+
+    .bi3 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 80px;
+        height: 100px;
+        font-size: 8px;
+
+    }
+
+    .bi4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 80px;
+        height: 100px;
+        font-size: 8px;
+
+    }
+
+    /* ----------------------contact-------------------------- */
+
+    .contactcontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 800px;
+
+    }
+
+
+    .left-contact {
+        height: 300px;
+        font-size: 15px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .left-h2 {
+
+        font-size: 20px;
+        margin: 0;
+
+    }
+
+    .gmail {
+        font-size: 25px;
+        display: flex;
+        height: 60px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+
+
+    }
+
+    .no {
+        font-size: 28px;
+        display: flex;
+        height: 60px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .right-contact {
+        font-size: 15px;
+        margin: 0;
+        margin-top: 50px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right-contact form input {
+        width: 340px;
+        padding: 15px;
+        margin-left: 0;
+
+
+    }
+
+    .right-contact textarea {
+        width: 340px;
+        margin-top: 20px;
+        margin-left: 0;
+        border-radius: 10px;
+        padding: 15PX;
+        font-size: 10PX;
+    }
+
+    .contact-button {
+        padding: 12px;
+        border-radius: 15px;
+        font-size: 12px;
+        font-weight: 600;
+        height: 100px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-icons {
+        width: 250px;
+        height: 80px;
+        align-items: center;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contact-icons img {
+        height: 45px;
+        width: 45px;
+    }
+
+    .icon-in {
+        margin: 0;
+    }
+
+    .icon-gmail {
+        margin: 0;
+    }
+
+}
+
+/*--------- small-mobile-screen-------*/
+@media screen and (max-width : 424px) {
+
+
+
+
+    /* -------------------------navBar------------------------- */
+
+
+
+    .mobile-nav {
+        display: block;
+
+
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .hideondeskot {
+        display: block;
+    }
+
+    .nav-option {
+
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        width: 200px;
+        height: 300px;
+        position: fixed;
+        right: -200px;
+        transition-duration: 1s;
+
+
+    }
+
+    .nav-option a {
+        /* background-color: black; */
+        color: white;
+        display: flex;
+        justify-content: center;
+        width: 200px;
+        padding: 0;
+    }
+
+
+    .menu {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        cursor: pointer;
+        background-color: black;
+
+    }
+
+    .menu img {
+        background-color: black;
+        height: 30px;
+}
+
+    .show {
+        right: 0px;
+    }
+
+    /* -----------about--------------- */
+
+
+
+    .about-image {
+        display: none;
+    }
+
+    .about-container {
+        display: flex;
+        margin: 0;
+        width: 100%;
+        height: 90vh;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-head {
+        margin-left: 0px;
+        padding-top: 0px;
+        font-size: 30px;
+        height: 300px;
+    }
+
+    .about-head h2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: black;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        align-items: center;
+        font-size: 14px;
+        height: 80PX;
+    }
+
+    .about-head h2 span {
+        font-size: 10.5px;
+    }
+
+    .mobile-version {
+        display: block;
+        margin: 0;
+    }
+
+    .mobile-versoion-image {
+        display: flex;
+        width: 100%;
+        height: 200px;
+        margin-top: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-versoion-image img {
+        height: 180px;
+        width: 180px;
+        border-radius: 150px;
+        background-image: linear-gradient(black, white);
+    }
+
+
+
+    .cv-button {
+        display: flex;
+        justify-content: center;
+        height: 50px;
+        width: 100%;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    .cv-button button {
+        margin: 0;
+
+    }
+
+    .cv-button:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+
+    .name-h2 {
+        height: 350px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        color: brown;
+        margin: 0;
+        margin-top: 50px;
+    }
+
+    .name-h2 span {
+        font-size: 14px;
+        align-items: center;
+        height: 100px;
+        width: fit-content;
+        font-weight: bold;
+    }
+
+
+    .about-icons {
+        display: flex;
+        padding: 10px;
+        width: 150px;
+        margin-top: 0px;
+        height: 60PX;
+        justify-content: space-evenly;
+        align-self: center;
+        padding: 0;
+    }
+
+
+    .icon-in {
+        height: 30px;
+        width: 30px;
+        background-color: rgb(255, 240, 24);
+        border-radius: 30px;
+    }
+
+    .icon-gmail {
+        height: 30px;
+        width: 30px;
+        background-color: rgb(255, 240, 24);
+        border-radius: 30px;
+    }
+
+    .icon-github {
+        height: 30px;
+        width: 30px;
+        background-color: rgb(255, 240, 24);
+        border-radius: 30px;
+
+    }
+
+    .icon-github:hover {
+        cursor: pointer;
+        opacity: 0.5;
+
+    }
+
+    .icon-gmail:hover {
+        cursor: pointer;
+        opacity: 0.5;
+
+    }
+
+    .icon-in:hover {
+        cursor: pointer;
+        opacity: 0.5;
+
+    }
+
+    .cv-button button {
+        height: 30px;
+        width: 80px;
+        font-size: 8px;
+        font-weight: bold;
+
+    }
+
+
+    .imag-about {
+        display: none;
+    }
+
+    .aboutcontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: fit-content;
+        margin-top: 20px;
+    }
+
+    .aboutcontainer p {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        width: 90vh;
+        margin: 0px 20px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .aboutheading {
+        margin: 0;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        font-size: 17px;
+    }
+
+
+    .aboutheading h1 {
+        font-size: 25px;
+
+    }
+
+
+
+    #skills {
+        display: block;
+    }
+
+    .skillcontainer {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+    }
+
+
+    .skillheading {
+        display: flex;
+        margin: 0;
+        height: 100px;
+        align-items: center;
+        font-size: 17px;
+    }
+
+    .Front-end {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: fit-content;
+
+    }
+
+    .frontEnd-heading h2 {
+
+        margin: 0;
+        padding: 0;
+        height: 60px;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .Front-end img {
+        flex-basis: 24%;
+        height: 60px;
+        width: 60px;
+
+
+    }
+
+    .Front-end p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 100%;
+        font-size: 10px;
+        padding: 2px;
+        margin-top: 0px;
+    }
+
+    .fi1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 5px;
+        text-align: center;
+        height: fit-content;
+
+    }
+
+    .fi2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: fit-content;
+        font-size: 5px;
+    }
+
+    .fi3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: fit-content;
+        font-size: 5px;
+
+    }
+
+    .fi4 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        height: fit-content;
+        font-size: 5px;
+
+    }
+
+    /*------------------------backEnd-------------------- */
+
+    .backEnd-heading h2 {
+        margin: 0;
+        padding: 0;
+        height: 80px;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .back-end {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+
+    .back-end img {
+        flex-basis: 30%;
+        height: 70px;
+        width: 70px;
+
+    }
+
+    .back-end p {
+        font-size: 10px;
+
+    }
+
+    .bi1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        font-size: 8px;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .bi2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: fit-content;
+        height: fit-content;
+        font-size: 8px;
+    }
+
+
+    .bi4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: fit-content;
+        height: fit-content;
+        font-size: 8px;
+        margin-top: 35px;
+    }
+
+    .projects-title {
+        font-size: 17px;
+    }
+
+    .projects {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .projectcart1 {
+        border: 3px solid black;
+        height: 460px;
+        width: 300px;
+        border-radius: 8px;
+        box-shadow: 3px 2px 20px 0.5px rgb(59, 59, 55);
+
+
+    }
+
+    .project1-heading-1 {
+        font-size: 10px;
+
+    }
+
+    .project1-para {
+        padding: 10px 10px;
+        text-align: justify;
+        line-height: 1.1;
+        font-size: 15px;
+
+
+    }
+
+    .button-view,
+    .button-github {
+        border: none;
+        width: 60px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    /* ----------------------contact-------------------------- */
+
+    .contactheading {
+        font-size: 17px;
+        height: 100px;
+    }
+
+    .contactcontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+    }
+
+
+    .left-contact {
+        height: 200px;
+        font-size: 12px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .left-h2 {
+        margin: 0;
+        height: fit-content;
+        width: 100%;
+
+    }
+
+    .left-h2 h2 {
+        font-size: 16px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8px;
+        height: 40px;
+    }
+
+    .gmail {
+        font-size: 12px;
+        display: flex;
+        height: 60px;
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+        padding-left: 20px;
+    }
+
+    .gmail i {
+        margin: 0;
+
+    }
+
+    .no {
+        font-size: 18px;
+        display: flex;
+        height: 60px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        margin: 0;
+    }
+
+    .right-contact {
+        font-size: 15px;
+        margin: 0;
+        margin-top: 70px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right-contact form input {
+        width: fit-content;
+        padding: 15px;
+        margin-left: 0;
+        border-radius: 10px;
+    }
+
+    .right-contact textarea {
+        width: fit-content;
+        margin-top: 20px;
+        margin-left: 0;
+        border-radius: 10px;
+        padding: 15PX;
+        font-size: 13px;
+    }
+
+    .contact-button {
+        padding: 12px;
+        border-radius: 15px;
+        font-size: 12px;
+        font-weight: 600;
+        height: 100px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-button button {
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-icons {
+        width: fit-content;
+        margin: 0;
+        display: flex;
+    }
+
+    .contact-icons img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .icon-in {
+        margin: 0;
+    }
+
+    .icon-gmail {
+        margin: 0;
+    }
+}
