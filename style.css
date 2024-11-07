@@ -1159,10 +1159,11 @@ form textarea {
         width: 100%;
     }
 
-.about-name{
-    font-size: 15px;
-    
-}
+    .about-name {
+        font-size: 15px;
+
+    }
+
     .name-h2 span {
         font-size: 20px;
         padding-top: 10px;
@@ -1958,6 +1959,7 @@ form textarea {
 
     .projectcart1 {
         height: 410px;
+        width: 200px;
     }
 
     .project1-heading-1 {
@@ -1981,6 +1983,66 @@ form textarea {
         width: 60px;
         height: 30px;
         font-size: 12px;
+    }
+
+    .contactcontainer {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .contactheading {
+        font-size: 15px;
+    }
+
+    .left-contact {
+        height: 50%;
+        width: 80%;
+    }
+
+    .left-contact-child {
+        height: 100%;
+        width: 100%;
+    }
+
+    .left-contact-child-heading {
+        font-size: 9px;
+        padding-top: 20px;
+    }
+
+    .left-contact-gmail {
+        font-size: 13px;
+        padding-top: 50px;
+    }
+
+    .left-contact-no {
+        font-size: 20px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .contact-icons {
+        font-size: 25px;
+    }
+
+    form {
+        height: 100%;
+        width: fit-content;
+        padding: 0;
+    }
+
+    form input {
+        height: 30px;
+    }
+
+    .right-contact {
+        height: 50%;
+        width: 80%;
+        padding: 0 20px;
+    }
+
+    .right-contact-heading {
+        padding:20px ;
     }
 
     /* ----------------------contact-------------------------- */
