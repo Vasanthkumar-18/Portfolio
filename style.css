@@ -1447,6 +1447,10 @@ nav li:first-child {
         font-size: 20px;
     }
 
+    .projectcart1 {
+        height: 470px;
+    }
+
     /*------------------------backEnd-------------------- */
 
     .backEnd-heading h2 {
@@ -1701,7 +1705,7 @@ nav li:first-child {
     .menu img {
         background-color: black;
         height: 30px;
-}
+    }
 
     .show {
         right: 0px;
@@ -2092,13 +2096,7 @@ nav li:first-child {
     }
 
     .projectcart1 {
-        border: 3px solid black;
-        height: 460px;
-        width: 300px;
-        border-radius: 8px;
-        box-shadow: 3px 2px 20px 0.5px rgb(59, 59, 55);
-
-
+        height: 410px;
     }
 
     .project1-heading-1 {
@@ -2111,6 +2109,7 @@ nav li:first-child {
         text-align: justify;
         line-height: 1.1;
         font-size: 15px;
+    
 
 
     }
