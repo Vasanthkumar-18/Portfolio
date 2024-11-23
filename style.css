@@ -227,6 +227,10 @@ nav li:first-child {
     justify-content: center;
     align-items: center;
     cursor: default;
+    animation: heading linear ;
+    animation-duration: 1s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
 
 }
 
@@ -243,11 +247,8 @@ nav li:first-child {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 80vh;
-    animation: slideleft1 ;
-    animation-duration: 0.5s;
-    animation-timeline: view();
-    animation-range: entry 0 cover 45%;
+    height: 60vh;
+  
     
 }
 
@@ -268,6 +269,10 @@ nav li:first-child {
     border-radius: 50px;
     border-radius: 180px;
     background-image: linear-gradient(black, white);
+    animation: slideright linear ;
+    animation-duration: 1s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
     /* box-shadow: -5px -5px 30px 2px rgb(71, 71, 54), 5px 5px 30px 2px  yellow; */
 }
 
@@ -279,6 +284,10 @@ nav li:first-child {
     font-size: 23px;
     text-align: justify;
     line-height: 1.4;
+    animation: slideleft1 linear ;
+    animation-duration: 1s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
   
 }
 
@@ -297,6 +306,10 @@ nav li:first-child {
     justify-content: center;
     align-items: center;
     cursor: default;
+    animation: heading1 linear ;
+    animation-duration: 1s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
 }
 
 /*--skill-mainContainer--*/
@@ -322,6 +335,12 @@ nav li:first-child {
     align-items: center;
     cursor: default;
     font-size: 30px;
+    animation-name:rotate1;
+    animation-duration: 2s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
+
+    
 }
 
 /*--front-End-Container--*/
@@ -340,15 +359,21 @@ nav li:first-child {
     align-items: center;
     justify-content: center;
     cursor: default;
+    animation-name:rotate1;
+    animation-duration: 1s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
 
 }
 
 /*--front-End-Images--*/
 .Front-end img {
-    height: 150px;
-    width: 150px;
-    animation-name: rotate;
-    animation-duration: 0.5s;
+    height: 130px;
+    width: 130px;
+    animation-name:rotate1;
+    animation-duration: 1s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
 
 }
 
@@ -380,6 +405,10 @@ nav li:first-child {
     align-items: center;
     cursor: default;
     font-size: 30px;
+    animation-name:rotate1;
+    animation-duration: 2s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
 }
 
 /*--Back-End-Container--*/
@@ -387,13 +416,17 @@ nav li:first-child {
 .back-end {
     justify-content: space-evenly;
     display: flex;
+ 
 }
 
 /*--Back-End-image--*/
 .back-end img {
     height: 150px;
     width: 150px;
-    animation-name: rotate;
+    animation-name:rotate ;
+    animation-duration: 1s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
 
 }
 
@@ -405,6 +438,10 @@ nav li:first-child {
     align-items: center;
     justify-content: center;
     cursor: default;
+    animation-name:rotate1;
+    animation-duration: 1s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
 
 }
 
@@ -443,6 +480,12 @@ nav li:first-child {
     height: 140px;
     display: flex;
     justify-content: center;
+    animation: heading linear ;
+    animation-duration: 1s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
+
+
 }
 
 .projectcart1 {
@@ -451,6 +494,10 @@ nav li:first-child {
     width: 300px;
     border-radius: 8px;
     box-shadow: 3px 3px 15px 0.5px rgb(59, 59, 55);
+    animation:rotate linear;
+    animation-duration: 1s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
 
 
 }
@@ -526,6 +573,10 @@ nav li:first-child {
     justify-content: center;
     align-items: center;
     font-size: 30px;
+    animation: heading  linear ;
+    animation-duration: 1s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
 }
 
 /*---Contact-heading-Span---*/
@@ -622,7 +673,8 @@ nav li:first-child {
 
 .right-contact-heading {
     display: flex;
-    justify-content: center
+    justify-content: center;
+    animation: shake 2s infinite;
 }
 
 form {
@@ -723,18 +775,77 @@ form textarea {
 }
 @keyframes slideleft1 {
     from {
-        transform: translateX(2500px);
-        opacity: 0.5;
-        scale: 0.5;
+      transform: translateX(1000px);
+      opacity: 0;
+       
     }
 
     to {
-        transform: translateX(0);
         opacity:1;
-        scale: 1;
+       
+    }
+}
+@keyframes heading {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+     
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+       
+    }
+}
+@keyframes heading1 {
+    from {
+        transform: translateX(-160px);
+        opacity: 0;
+     
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+       
     }
 }
 
+
+@keyframes rotate {
+    from {
+        transform: rotateY(-120deg);
+        opacity: 0;
+     
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+       
+    }
+}
+@keyframes rotate1 {
+    from {
+        transform: rotateY(120deg);
+        opacity: 0;
+     
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+       
+    }
+}
+
+@keyframes shake {
+10%{transform: rotate(3deg);}
+30%{transform: rotate(-3deg);}
+50%{ transform:rotate(3deg);}
+70%{transform:rotate(-3deg);}
+}
 
 /*-------resposive-screens-----*/
 
