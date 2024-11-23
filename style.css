@@ -91,8 +91,7 @@ nav li:first-child {
     justify-content: space-evenly;
     align-items: center;
     height: 92vh;
-
-
+    overflow: hidden;
 
 }
 
@@ -227,15 +226,16 @@ nav li:first-child {
     justify-content: center;
     align-items: center;
     cursor: default;
-    animation: heading linear ;
-    animation-duration: 1s;
-    animation-timeline: view();
-    animation-range: entry 0 cover 50%;
+
 
 }
 
 .aboutheading h1 {  
     color: black;
+    animation: heading linear ;
+    animation-duration: 1s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
 }
 
 .aboutheading span {
@@ -284,7 +284,7 @@ nav li:first-child {
     font-size: 23px;
     text-align: justify;
     line-height: 1.4;
-    animation: slideleft1 linear ;
+    animation: scroll linear ;
     animation-duration: 1s;
     animation-timeline: view();
     animation-range: entry 0 cover 40%;
@@ -480,12 +480,16 @@ nav li:first-child {
     height: 140px;
     display: flex;
     justify-content: center;
-    animation: heading linear ;
-    animation-duration: 1s;
-    animation-timeline: view();
-    animation-range: entry 0 cover 50%;
 
 
+}
+.projects-title h1{
+  animation: heading linear ;
+  animation-duration: 1s;
+  animation-timeline: view();
+  animation-range: entry 0 cover 50%;
+
+   
 }
 
 .projectcart1 {
@@ -573,6 +577,10 @@ nav li:first-child {
     justify-content: center;
     align-items: center;
     font-size: 30px;
+
+}
+/* animation */
+.contactheading h1{
     animation: heading  linear ;
     animation-duration: 1s;
     animation-timeline: view();
@@ -674,7 +682,7 @@ nav li:first-child {
 .right-contact-heading {
     display: flex;
     justify-content: center;
-    animation: shake 2s infinite;
+    animation: shake 1s infinite;
 }
 
 form {
@@ -773,18 +781,7 @@ form textarea {
         scale: 1;
     }
 }
-@keyframes slideleft1 {
-    from {
-      transform: translateX(1000px);
-      opacity: 0;
-       
-    }
 
-    to {
-        opacity:1;
-       
-    }
-}
 @keyframes heading {
     from {
         transform: translateX(100px);
@@ -841,10 +838,10 @@ form textarea {
 }
 
 @keyframes shake {
-10%{transform: rotate(3deg);}
-30%{transform: rotate(-3deg);}
-50%{ transform:rotate(3deg);}
-70%{transform:rotate(-3deg);}
+10%{transform: rotate(5deg);}
+30%{transform: rotate(-5deg);}
+50%{ transform:rotate(5deg);}
+70%{transform:rotate(-5deg);}
 }
 
 /*-------resposive-screens-----*/
